@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Leon的博客</title>
+  <icon>https://www.gravatar.com/avatar/4f86a47a89e1f916545985f2a51ded5d</icon>
+  <subtitle>Hello Stranger</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://leonpython.github.io/"/>
+  <updated>2018-01-05T07:53:56.619Z</updated>
+  <id>https://leonpython.github.io/</id>
+  
+  <author>
+    <name>Leon</name>
+    <email>874262257@qq.com</email>
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>erros</title>
+    <link href="https://leonpython.github.io/2018/01/05/erros/"/>
+    <id>https://leonpython.github.io/2018/01/05/erros/</id>
+    <published>2018-01-05T07:19:37.000Z</published>
+    <updated>2018-01-05T07:53:56.619Z</updated>
+    
+    <content type="html"><![CDATA[<p>##过程中遇到的错误<br>1.在出现<br> <code>npm WARN checkPermissions Missing write access to D:\blog1\node_modules\fsevents</code><br>错误的时候，<br>使用<code>cnpm install hexo-deployer-git --save</code><br>而不是<br><code>npm install hexo-deployer-git --save</code><br>(少一个c，调用其他源)</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;##过程中遇到的错误&lt;br&gt;1.在出现&lt;br&gt; &lt;code&gt;npm WARN checkPermissions Missing write access to D:\blog1\node_modules\fsevents&lt;/code&gt;&lt;br&gt;错误的时候，&lt;br&gt;使用&lt;cod
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>第一篇博文</title>
+    <link href="https://leonpython.github.io/2018/01/05/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E6%96%87/"/>
+    <id>https://leonpython.github.io/2018/01/05/第一篇博文/</id>
+    <published>2018-01-05T04:48:17.000Z</published>
+    <updated>2018-01-05T06:37:49.540Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="在hexo的第一篇博文"><a href="#在hexo的第一篇博文" class="headerlink" title="在hexo的第一篇博文"></a>在hexo的第一篇博文</h2><p><img src="http://p22ih0wv4.bkt.clouddn.com/999.jpg" alt="非常喜欢的图片" title="上一个网站的背景图"></p><p>这不是我的第一个个人网站。曾经用wordpress把网站搭建在了腾讯云上，后来因为长时间无人管理，超过续费时限就被收回了。。收回了。。</p><p>然后在昨天偶然看见了hexo，感觉特别geek主义。很喜欢。</p><p>在网上学习了一波github托管网页，一直有用github却没有发现这个大法器。。</p><p>然后就有了现在这个站点。</p><p>由于是挂在github上的，那么这个网站很长时间内是不会挂掉的。</p><p>仅此。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;在hexo的第一篇博文&quot;&gt;&lt;a href=&quot;#在hexo的第一篇博文&quot; class=&quot;headerlink&quot; title=&quot;在hexo的第一篇博文&quot;&gt;&lt;/a&gt;在hexo的第一篇博文&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://p22ih0wv4.bkt.clo
+      
+    
+    </summary>
+    
+    
+      <category term="随笔" scheme="https://leonpython.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+</feed>
