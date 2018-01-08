@@ -183,15 +183,37 @@ var _hmt = _hmt || [];
         
       </header>
     
+
+<!-- 目录内容 -->
+
+    <p class="show-toc-btn" id="show-toc-btn" onclick="showToc();" style="display:none">
+          <span class="btn-bg"></span>
+          <span class="btn-text">文章导航</span>
+          </p>
+  <div id="toc-article" class="toc-article">
+      <span id="toc-close" class="toc-close" title="隐藏导航" onclick="showBtn();">×</span>
+    <strong class="toc-title">文章目录</strong>
+           <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#标题没有敌意"><span class="toc-number">1.</span> <span class="toc-text">标题没有敌意</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#嘻哈记忆"><span class="toc-number">2.</span> <span class="toc-text">嘻哈记忆</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#今年夏天"><span class="toc-number">3.</span> <span class="toc-text">今年夏天</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Gai"><span class="toc-number">4.</span> <span class="toc-text">Gai</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#我认为"><span class="toc-number">5.</span> <span class="toc-text">我认为</span></a></li></ol>
+         </div>
+   <script type="text/javascript">
+  function showToc(){
+    var toc_article = document.getElementById("toc-article");
+    var show_toc_btn = document.getElementById("show-toc-btn");
+    toc_article.setAttribute("style","display:block");
+    show_toc_btn.setAttribute("style","display:none");
+    };
+  function showBtn(){
+    var toc_article = document.getElementById("toc-article");
+    var show_toc_btn = document.getElementById("show-toc-btn");
+    toc_article.setAttribute("style","display:none");
+    show_toc_btn.setAttribute("style","display:block");
+    };
+   </script>
+      
+<!-- 目录内容结束 -->
+    
     <div class="article-entry" itemprop="articleBody">
       
-
-      <!-- Table of Contents -->
-
-  <div id="toc" class="toc-article">
-    <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#标题没有敌意"><span class="toc-number">1.</span> <span class="toc-text">标题没有敌意</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#嘻哈记忆"><span class="toc-number">2.</span> <span class="toc-text">嘻哈记忆</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#今年夏天"><span class="toc-number">3.</span> <span class="toc-text">今年夏天</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Gai"><span class="toc-number">4.</span> <span class="toc-text">Gai</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#我认为"><span class="toc-number">5.</span> <span class="toc-text">我认为</span></a></li></ol>
-  </div>
 
 
         <blockquote>
@@ -219,7 +241,7 @@ var _hmt = _hmt || [];
             <span class="tooltip-content">
               <span class="tooltip-text">
                 <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>THANKS<i class="icon icon-quo-right"></i></p>
                   <div class="reward-box">
                     
                     <div class="reward-box-item">
@@ -406,7 +428,7 @@ var _hmt = _hmt || [];
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
-		open_in_new: true,
+		open_in_new: flase,
 		toc_hide_index: true,
 		root: "/",
 		innerArchive: true,
