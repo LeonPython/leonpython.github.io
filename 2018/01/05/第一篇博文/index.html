@@ -76,6 +76,10 @@ var _hmt = _hmt || [];
 	        
 				<li><a href="/photos">相册</a></li>
 	        
+				<li><a href="/tags/随笔/">随笔</a></li>
+	        
+				<li><a href="/tags/markdown/">markdown</a></li>
+	        
 			</ul>
 		</nav>
 		<nav class="header-smart-menu">
@@ -84,6 +88,8 @@ var _hmt = _hmt || [];
     			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">所有文章</a>
     			
             
+    			
+    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
     			
             
     			
@@ -130,6 +136,10 @@ var _hmt = _hmt || [];
 			
 				
 			
+				
+			
+				
+			
 			
 			
 			<nav class="header-nav">
@@ -145,12 +155,16 @@ var _hmt = _hmt || [];
 			</nav>
 
 			<nav class="header-menu js-header-menu">
-				<ul style="width: 50%">
+				<ul style="width: 70%">
 				
 				
-					<li style="width: 50%"><a href="/">主页</a></li>
+					<li style="width: 25%"><a href="/">主页</a></li>
 		        
-					<li style="width: 50%"><a href="/photos">相册</a></li>
+					<li style="width: 25%"><a href="/photos">相册</a></li>
+		        
+					<li style="width: 25%"><a href="/tags/随笔/">随笔</a></li>
+		        
+					<li style="width: 25%"><a href="/tags/markdown/">markdown</a></li>
 		        
 				</ul>
 			</nav>
@@ -165,9 +179,7 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-
-<article id="post-第一篇博文" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-第一篇博文" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
@@ -185,39 +197,8 @@ var _hmt = _hmt || [];
         
       </header>
     
-
-<!-- 目录内容 -->
-
-    <p class="show-toc-btn" id="show-toc-btn" onclick="showToc();" style="display:none">
-          <span class="btn-bg"></span>
-          <span class="btn-text">文章导航</span>
-          </p>
-  <div id="toc-article" class="toc-article">
-      <span id="toc-close" class="toc-close" title="隐藏导航" onclick="showBtn();">×</span>
-    <strong class="toc-title">文章目录</strong>
-           <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#在hexo的第一篇博文"><span class="toc-number">1.</span> <span class="toc-text">在hexo的第一篇博文</span></a></li></ol>
-         </div>
-   <script type="text/javascript">
-  function showToc(){
-    var toc_article = document.getElementById("toc-article");
-    var show_toc_btn = document.getElementById("show-toc-btn");
-    toc_article.setAttribute("style","display:block");
-    show_toc_btn.setAttribute("style","display:none");
-    };
-  function showBtn(){
-    var toc_article = document.getElementById("toc-article");
-    var show_toc_btn = document.getElementById("show-toc-btn");
-    toc_article.setAttribute("style","display:none");
-    show_toc_btn.setAttribute("style","display:block");
-    };
-   </script>
-      
-<!-- 目录内容结束 -->
-    
     <div class="article-entry" itemprop="articleBody">
       
-
-
         <h2 id="在hexo的第一篇博文"><a href="#在hexo的第一篇博文" class="headerlink" title="在hexo的第一篇博文"></a>在hexo的第一篇博文</h2><p><img src="http://p22ih0wv4.bkt.clouddn.com/999.jpg" alt="非常喜欢的图片" title="上一个网站的背景图"></p>
 <p>这不是我的第一个个人网站。曾经用wordpress把网站搭建在了腾讯云上，后来因为长时间无人管理，超过续费时限就被收回了。。收回了。。</p>
 <a id="more"></a>
@@ -228,10 +209,6 @@ var _hmt = _hmt || [];
 <p>仅此。</p>
 
       
-
-
-
-
 
       
         <div class="page-reward">
@@ -409,7 +386,6 @@ var _hmt = _hmt || [];
   
 
 
- 
           </div>
         </div>
       </div>
@@ -434,7 +410,7 @@ var _hmt = _hmt || [];
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
-		open_in_new: flase,
+		open_in_new: true,
 		toc_hide_index: true,
 		root: "/",
 		innerArchive: true,
@@ -479,6 +455,8 @@ MathJax.Hub.Queue(function() {
       
     
       
+      
+      
     
       
       
@@ -490,13 +468,15 @@ MathJax.Hub.Queue(function() {
     
     
       
-      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
       
         
       
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
+      
         
       
-      <li style="width: 50%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
       
         
     </ul>
@@ -568,11 +548,43 @@ MathJax.Hub.Queue(function() {
     
 
     
+    	<section class="tools-section tools-section-friends" q-show="friends">
+  		
+        <ul class="search-ul">
+          
+            <li class="search-li">
+              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接2</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接3</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接4</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接5</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接6</a>
+            </li>
+          
+        </ul>
+  		
+    	</section>
+    
 
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">Leon，&lt;br&gt;河北工业大学-网络工程系&lt;br&gt;重庆人&lt;br&gt;热爱编码。</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
   	  	
     	</section>
     

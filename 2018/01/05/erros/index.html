@@ -74,6 +74,10 @@ var _hmt = _hmt || [];
 	        
 				<li><a href="/photos">相册</a></li>
 	        
+				<li><a href="/tags/随笔/">随笔</a></li>
+	        
+				<li><a href="/tags/markdown/">markdown</a></li>
+	        
 			</ul>
 		</nav>
 		<nav class="header-smart-menu">
@@ -82,6 +86,8 @@ var _hmt = _hmt || [];
     			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">所有文章</a>
     			
             
+    			
+    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
     			
             
     			
@@ -128,6 +134,10 @@ var _hmt = _hmt || [];
 			
 				
 			
+				
+			
+				
+			
 			
 			
 			<nav class="header-nav">
@@ -143,12 +153,16 @@ var _hmt = _hmt || [];
 			</nav>
 
 			<nav class="header-menu js-header-menu">
-				<ul style="width: 50%">
+				<ul style="width: 70%">
 				
 				
-					<li style="width: 50%"><a href="/">主页</a></li>
+					<li style="width: 25%"><a href="/">主页</a></li>
 		        
-					<li style="width: 50%"><a href="/photos">相册</a></li>
+					<li style="width: 25%"><a href="/photos">相册</a></li>
+		        
+					<li style="width: 25%"><a href="/tags/随笔/">随笔</a></li>
+		        
+					<li style="width: 25%"><a href="/tags/markdown/">markdown</a></li>
 		        
 				</ul>
 			</nav>
@@ -163,9 +177,7 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-
-<article id="post-erros" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-erros" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
@@ -183,15 +195,8 @@ var _hmt = _hmt || [];
         
       </header>
     
-
-<!-- 目录内容 -->
-
-<!-- 目录内容结束 -->
-    
     <div class="article-entry" itemprop="articleBody">
       
-
-
         <h1 id="建立hexo站点过程中遇到的错误"><a href="#建立hexo站点过程中遇到的错误" class="headerlink" title="建立hexo站点过程中遇到的错误"></a>建立hexo站点过程中遇到的错误</h1><h2 id="1"><a href="#1" class="headerlink" title="1"></a>1</h2><p>在出现 </p>
 <p><code>npm WARN checkPermissions Missing write access to D:\blog1\node_modules\fsevents</code></p>
 <a id="more"></a>
@@ -204,10 +209,6 @@ var _hmt = _hmt || [];
 <p>##3 WARN checkPermissions Missing write access<br>出现没有权限的问题，尝试过很多方法，大多数是使用管理员权限，但是并没有效果。<br>这里我选择的是删除<code>node_modules</code>这个 文件夹。暂时奏效，没有出现什么不良后果。</p>
 
       
-
-
-
-
 
       
         <div class="page-reward">
@@ -366,7 +367,6 @@ var _hmt = _hmt || [];
   
 
 
- 
           </div>
         </div>
       </div>
@@ -391,7 +391,7 @@ var _hmt = _hmt || [];
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
-		open_in_new: flase,
+		open_in_new: true,
 		toc_hide_index: true,
 		root: "/",
 		innerArchive: true,
@@ -436,6 +436,8 @@ MathJax.Hub.Queue(function() {
       
     
       
+      
+      
     
       
       
@@ -447,13 +449,15 @@ MathJax.Hub.Queue(function() {
     
     
       
-      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
       
         
       
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
+      
         
       
-      <li style="width: 50%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
       
         
     </ul>
@@ -525,11 +529,43 @@ MathJax.Hub.Queue(function() {
     
 
     
+    	<section class="tools-section tools-section-friends" q-show="friends">
+  		
+        <ul class="search-ul">
+          
+            <li class="search-li">
+              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接2</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接3</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接4</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接5</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接6</a>
+            </li>
+          
+        </ul>
+  		
+    	</section>
+    
 
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">Leon，&lt;br&gt;河北工业大学-网络工程系&lt;br&gt;重庆人&lt;br&gt;热爱编码。</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
   	  	
     	</section>
     

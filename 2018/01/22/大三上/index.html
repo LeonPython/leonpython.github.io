@@ -76,6 +76,10 @@ var _hmt = _hmt || [];
 	        
 				<li><a href="/photos">相册</a></li>
 	        
+				<li><a href="/tags/随笔/">随笔</a></li>
+	        
+				<li><a href="/tags/markdown/">markdown</a></li>
+	        
 			</ul>
 		</nav>
 		<nav class="header-smart-menu">
@@ -84,6 +88,8 @@ var _hmt = _hmt || [];
     			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">所有文章</a>
     			
             
+    			
+    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
     			
             
     			
@@ -130,6 +136,10 @@ var _hmt = _hmt || [];
 			
 				
 			
+				
+			
+				
+			
 			
 			
 			<nav class="header-nav">
@@ -145,12 +155,16 @@ var _hmt = _hmt || [];
 			</nav>
 
 			<nav class="header-menu js-header-menu">
-				<ul style="width: 50%">
+				<ul style="width: 70%">
 				
 				
-					<li style="width: 50%"><a href="/">主页</a></li>
+					<li style="width: 25%"><a href="/">主页</a></li>
 		        
-					<li style="width: 50%"><a href="/photos">相册</a></li>
+					<li style="width: 25%"><a href="/photos">相册</a></li>
+		        
+					<li style="width: 25%"><a href="/tags/随笔/">随笔</a></li>
+		        
+					<li style="width: 25%"><a href="/tags/markdown/">markdown</a></li>
 		        
 				</ul>
 			</nav>
@@ -165,9 +179,7 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-
-<article id="post-大三上" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-大三上" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
@@ -185,23 +197,12 @@ var _hmt = _hmt || [];
         
       </header>
     
-
-<!-- 目录内容 -->
-
-<!-- 目录内容结束 -->
-    
     <div class="article-entry" itemprop="articleBody">
       
-
-
         <h2 id="今年，天津的雪下得很晚"><a href="#今年，天津的雪下得很晚" class="headerlink" title="今年，天津的雪下得很晚"></a>今年，天津的雪下得很晚</h2><p>在考试的最后一天，终于见到了这白茫茫的景色。<br>每个人都很期待，就连北方的室友这个冬天都还时不时的问到何时下雪。<br><a id="more"></a><br>在天津已经三年了，每一年都能如愿见到雪花，这也算是对南方人的一些福利。在重庆的每一年都是没有雪的，记忆中唯一一次也只是在08年的那场全国寒潮，见到了一点点的、连脚掌都淹没不了的雪。那时候还小，跟着一群从来只在电视上见过雪的小伙伴也能玩的热火朝天。<br>早上起来准备今天的考试，这学期最后的一场考试了。满世界都是白的，踩在雪地上，沙沙作响。没有别的声响，就好像只有我和雪，在这天地间的联系就这么微妙起来。雪是那么白，捧起来还能看见一颗一颗的雪粒，可惜雪在掌心化得太快，也确实冻得厉害。<br>下雪天就像是一场仪式，有了这场仪式冬天才能算是来过。<br><img src="http://p22ih0wv4.bkt.clouddn.com/%E9%9B%AA%E6%A0%91%E5%8F%B6.png" alt="雪地的枯叶"></p>
 <h2 id="考试很晚"><a href="#考试很晚" class="headerlink" title="考试很晚"></a>考试很晚</h2><p>时间过得很快，这学期又将匆匆过去。不止一个朋友找我聊天的时候，说到很多现实的问题。马上面临的毕业，工作还是继续读书，对于自己职业和未来的规划也都没有头绪。应该每一个人都这样吧。年轻的时候总是要考虑很多东西，因为选择很多，越往后走，选择就变得越来越少，终究会被现实一步步推着走。希望我和我的朋友们，都能做出无悔的选择。<br>这一学期收获什么的还是想等到考试结束后再总结了，自觉这学期算是状态比较好的了，也开始知道自己想要的什么，在目标确定之后的人就不会显得迷茫和枉然。慢慢开始坚持一些东西，希望最后有一个好的结果。<br>念念不忘，必有回响。</p>
 
       
-
-
-
-
 
       
         <div class="page-reward">
@@ -351,7 +352,6 @@ var _hmt = _hmt || [];
   
 
 
- 
           </div>
         </div>
       </div>
@@ -376,7 +376,7 @@ var _hmt = _hmt || [];
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
-		open_in_new: flase,
+		open_in_new: true,
 		toc_hide_index: true,
 		root: "/",
 		innerArchive: true,
@@ -421,6 +421,8 @@ MathJax.Hub.Queue(function() {
       
     
       
+      
+      
     
       
       
@@ -432,13 +434,15 @@ MathJax.Hub.Queue(function() {
     
     
       
-      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
       
         
       
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
+      
         
       
-      <li style="width: 50%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
       
         
     </ul>
@@ -510,11 +514,43 @@ MathJax.Hub.Queue(function() {
     
 
     
+    	<section class="tools-section tools-section-friends" q-show="friends">
+  		
+        <ul class="search-ul">
+          
+            <li class="search-li">
+              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接2</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接3</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接4</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接5</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接6</a>
+            </li>
+          
+        </ul>
+  		
+    	</section>
+    
 
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">Leon，&lt;br&gt;河北工业大学-网络工程系&lt;br&gt;重庆人&lt;br&gt;热爱编码。</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
   	  	
     	</section>
     
