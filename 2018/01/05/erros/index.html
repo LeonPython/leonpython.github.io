@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://leonpython.github.io">
-  <title>erros | Leon的博客</title>
+  <title>hexo 建站 erros | Leon的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="建立hexo站点过程中遇到的错误1在出现  npm WARN checkPermissions Missing write access to D:\blog1\node_modules\fsevents">
 <meta name="keywords" content="前端,js,jquery,javascript,html5,开发者,程序猿,极客,编程,代码,开源,IT网站,Developer,Programmer,Coder,Geek,html,css,css3,用户体验">
 <meta property="og:type" content="article">
-<meta property="og:title" content="erros">
+<meta property="og:title" content="hexo 建站 erros">
 <meta property="og:url" content="https://leonpython.github.io/2018/01/05/erros/index.html">
 <meta property="og:site_name" content="Leon的博客">
 <meta property="og:description" content="建立hexo站点过程中遇到的错误1在出现  npm WARN checkPermissions Missing write access to D:\blog1\node_modules\fsevents">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-22T10:20:21.400Z">
+<meta property="og:updated_time" content="2018-03-07T15:51:47.099Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="erros">
+<meta name="twitter:title" content="hexo 建站 erros">
 <meta name="twitter:description" content="建立hexo站点过程中遇到的错误1在出现  npm WARN checkPermissions Missing write access to D:\blog1\node_modules\fsevents">
   
     <link rel="alternative" href="/atom.xml" title="Leon的博客" type="application/atom+xml">
@@ -176,7 +176,7 @@ var _hmt = _hmt || [];
         
   
     <h1 class="article-title" itemprop="name">
-      erros
+      hexo 建站 erros
     </h1>
   
 
@@ -198,7 +198,9 @@ var _hmt = _hmt || [];
 <p>而不是<br><code>npm install hexo-deployer-git --save</code><br>(多一个c，调用淘宝源， —一些相似的安装命令也可以这样解决）</p>
 <p>##2 hexo里的语法比较严格，冒号<code>:</code>后面一定要接一个空格<br>在上传的markdown类型文件以及hexo里的配置文件等，都要遵循这个规则。</p>
 <p>曾在一篇文章的tag字段的冒号后面没有加空格，导致无法出现错误，无法上传<br><code>tags: markdown</code>应改为<code>tags: markdown</code></p>
-<p>##3 WARN checkPermissions Missing write access<br>出现没有权限的问题，尝试过很多方法，大多数是使用管理员权限，但是并没有效果。<br>这里我选择的是删除<code>node_modules</code>这个 文件夹。暂时奏效，没有出现什么不良后果。</p>
+<p>##3 <code>WARN checkPermissions Missing write access</code><br>出现没有权限的问题，尝试过很多方法，大多数是使用管理员权限，但是并没有效果。<br>这里我选择的是删除<code>node_modules</code>这个 文件夹。暂时奏效，没有出现什么不良后果。</p>
+<p>##4 <code>fatal: could not read Username for &#39;https://github.com&#39;: No error</code><br>这是因为配置文件中没有网站密码<br>解决方式是：</p>
+<p>修改配置文件：根目录下的_config.yml，修改deploy节点。<br>原来的配置为：<br>deploy:<br>type: git<br>repo: <a href="https://github.com/{yourname}/{yourname}.github.io.git" target="_blank" rel="noopener">https://github.com/{yourname}/{yourname}.github.io.git</a><br>branch: master<br>修改为如下：<br>deploy:<br>type: git<br>repo: <a href="https://{yourname}:{yourpassword}@github.com/{yourname}/{yourname}.github.io.git" target="_blank" rel="noopener">https://{yourname}:{yourpassword}@github.com/{yourname}/{yourname}.github.io.git</a><br>branch: master</p>
 
       
 

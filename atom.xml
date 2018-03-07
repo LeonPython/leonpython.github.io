@@ -85,13 +85,13 @@
   </entry>
   
   <entry>
-    <title>erros</title>
+    <title>hexo 建站 erros</title>
     <link href="https://leonpython.github.io/2018/01/05/erros/"/>
     <id>https://leonpython.github.io/2018/01/05/erros/</id>
     <published>2018-01-05T07:19:37.000Z</published>
-    <updated>2018-01-22T10:20:21.400Z</updated>
+    <updated>2018-03-07T15:51:47.099Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="建立hexo站点过程中遇到的错误"><a href="#建立hexo站点过程中遇到的错误" class="headerlink" title="建立hexo站点过程中遇到的错误"></a>建立hexo站点过程中遇到的错误</h1><h2 id="1"><a href="#1" class="headerlink" title="1"></a>1</h2><p>在出现 </p><p><code>npm WARN checkPermissions Missing write access to D:\blog1\node_modules\fsevents</code></p><a id="more"></a><p>错误的时候时，</p><p>使用命令</p><p><code>cnpm install hexo-deployer-git --save</code></p><p>而不是<br><code>npm install hexo-deployer-git --save</code><br>(多一个c，调用淘宝源， —一些相似的安装命令也可以这样解决）</p><p>##2 hexo里的语法比较严格，冒号<code>:</code>后面一定要接一个空格<br>在上传的markdown类型文件以及hexo里的配置文件等，都要遵循这个规则。</p><p>曾在一篇文章的tag字段的冒号后面没有加空格，导致无法出现错误，无法上传<br><code>tags: markdown</code>应改为<code>tags: markdown</code></p><p>##3 WARN checkPermissions Missing write access<br>出现没有权限的问题，尝试过很多方法，大多数是使用管理员权限，但是并没有效果。<br>这里我选择的是删除<code>node_modules</code>这个 文件夹。暂时奏效，没有出现什么不良后果。</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="建立hexo站点过程中遇到的错误"><a href="#建立hexo站点过程中遇到的错误" class="headerlink" title="建立hexo站点过程中遇到的错误"></a>建立hexo站点过程中遇到的错误</h1><h2 id="1"><a href="#1" class="headerlink" title="1"></a>1</h2><p>在出现 </p><p><code>npm WARN checkPermissions Missing write access to D:\blog1\node_modules\fsevents</code></p><a id="more"></a><p>错误的时候时，</p><p>使用命令</p><p><code>cnpm install hexo-deployer-git --save</code></p><p>而不是<br><code>npm install hexo-deployer-git --save</code><br>(多一个c，调用淘宝源， —一些相似的安装命令也可以这样解决）</p><p>##2 hexo里的语法比较严格，冒号<code>:</code>后面一定要接一个空格<br>在上传的markdown类型文件以及hexo里的配置文件等，都要遵循这个规则。</p><p>曾在一篇文章的tag字段的冒号后面没有加空格，导致无法出现错误，无法上传<br><code>tags: markdown</code>应改为<code>tags: markdown</code></p><p>##3 <code>WARN checkPermissions Missing write access</code><br>出现没有权限的问题，尝试过很多方法，大多数是使用管理员权限，但是并没有效果。<br>这里我选择的是删除<code>node_modules</code>这个 文件夹。暂时奏效，没有出现什么不良后果。</p><p>##4 <code>fatal: could not read Username for &#39;https://github.com&#39;: No error</code><br>这是因为配置文件中没有网站密码<br>解决方式是：</p><p>修改配置文件：根目录下的_config.yml，修改deploy节点。<br>原来的配置为：<br>deploy:<br>type: git<br>repo: <a href="https://github.com/{yourname}/{yourname}.github.io.git" target="_blank" rel="noopener">https://github.com/{yourname}/{yourname}.github.io.git</a><br>branch: master<br>修改为如下：<br>deploy:<br>type: git<br>repo: <a href="https://{yourname}:{yourpassword}@github.com/{yourname}/{yourname}.github.io.git" target="_blank" rel="noopener">https://{yourname}:{yourpassword}@github.com/{yourname}/{yourname}.github.io.git</a><br>branch: master</p>]]></content>
     
     <summary type="html">
     
